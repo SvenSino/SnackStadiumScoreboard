@@ -2,9 +2,9 @@ import { defineStore } from 'pinia'
 
 export const dataStore = defineStore('data', {
   state: () => ({
-    score1: '0',
-    score2: '0',
-    currentMinute: '0',
+    score1: '12',
+    score2: '12',
+    currentMinute: '12',
     currentPeriod: '0'
   }),
 

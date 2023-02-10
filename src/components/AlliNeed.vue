@@ -21,7 +21,6 @@
 import { dataStore } from '@/stores/data'
 import { onMounted } from 'vue';
 const store = dataStore()
-const API_URL = "https://bwin.hs-edge.net/api/live/de/match-events-by-all/pv1/ma9560253/mf-no/om-current/ls0/lo1";
 const API_URLSB = "https://bwin.hs-edge.net/api/live/de/match-events-by-all/pv1/ma9549916/mf-no/om-current/ls0/lo1";
 //current_period	"game-start" Q1
 
@@ -72,10 +71,10 @@ function getLiveScores() {
         });
 }
 
-/* onMounted(() => {
-    setInterval(getLiveScores, 10000000)
+onMounted(() => {
+    setInterval(getLiveScores, 3000)
     getLiveScores();
-}) */
+}) 
 
 </script>
 <style>
